@@ -1,6 +1,6 @@
 # libavif-container
 
-[![Unit tests](https://github.com/link-u/libavif-container/workflows/Unit%20tests/badge.svg)](https://github.com/link-u/libavif-container/actions?query=workflow%3A%22Unit+tests%22)
+[![Unit tests](https://github.com/avif-community/libavif-container/workflows/Unit%20tests/badge.svg)](https://github.com/avif-community/libavif-container/actions?query=workflow%3A%22Unit+tests%22)
 
 A library to parsing and writing avif container.
 
@@ -8,9 +8,9 @@ A library to parsing and writing avif container.
 
 ## Related repositories
 
-- [link-u/davif](https://github.com/link-u/davif) - avif decoder, using dav1d directly.
-- [link-u/cavif](https://github.com/link-u/cavif) - avif encoder, using libaom directly.
-- [link-u/avif-sample-images](https://github.com/link-u/avif-sample-images) - sample images from us.
+- [avif-community/davif](https://github.com/avif-community/davif) - avif decoder, using dav1d directly.
+- [avif-community/cavif](https://github.com/avif-community/cavif) - avif encoder, using libaom directly.
+- [avif-community/avif-sample-images](https://github.com/avif-community/avif-sample-images) - sample images from us.
 - [AOMediaCodec/av1-avif](https://github.com/AOMediaCodec/av1-avif/tree/master/testFiles) - test files from Microsoft and Netflix.
 
 # How to use
@@ -18,7 +18,7 @@ A library to parsing and writing avif container.
 ## To clone this repo
 
 ```bash
-git clone --recurse-submodules --recursive https://github.com/link-u/libavif-container.git
+git clone --recurse-submodules --recursive https://github.com/avif-community/libavif-container.git
 ```
 
 ## From CMake
