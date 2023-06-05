@@ -10,18 +10,18 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v3
       with:
         submodules: 'recursive'
         fetch-depth: 0
-    - name: Install gcc-8 g++-8
+    - name: Install gcc g++
       shell: bash
       run: |
-        sudo apt install -y gcc-8 g++-8
+        sudo apt install -y gcc g++
     - name: configure
-      run: CXX=g++-8 CC=gcc-8 cmake -S . -B build/ -DLIBAVIF_CONTAINER_BUILD_TESTS=ON
+      run: cmake -S . -B build/ -DLIBAVIF_CONTAINER_BUILD_TESTS=ON
     - name: make
       run: env --chdir build make
     - name: ctest
